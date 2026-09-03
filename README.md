@@ -112,6 +112,7 @@ La app incluye login con **correo/contraseña** y **Google** (Firebase Auth). To
 
 ## Próximos pasos sugeridos
 
+- Documentos por contacto/negociación: quedó pausado (se evaluó Firebase Storage y Google Drive, pero se decidió usar correo electrónico mientras tanto). El código base (`src/hooks/useDocuments.js`, `src/components/DocumentsPanel.jsx`, `storage.rules`) ya existe listo para retomarlo cuando se defina el enfoque final.
 - Filtrar datos por usuario/agente (por ejemplo, que cada quien vea solo sus propios contactos).
 - Vincular `deals` con IDs reales de `contacts` y `properties` en vez de texto libre.
 - Subir fotos de propiedades con Firebase Storage.

@@ -132,6 +132,7 @@ export default function Contacts() {
           <Field label="Notas">
             <textarea rows={3} className={inputClass} value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} />
           </Field>
+
           <div className="flex justify-end gap-2 mt-2">
             <Button type="button" variant="ghost" onClick={() => setModalOpen(false)}>Cancelar</Button>
             <Button type="submit">{editing ? "Guardar cambios" : "Crear contacto"}</Button>

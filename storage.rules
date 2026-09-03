@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Reglas de ejemplo para el PROTOTIPO: solo usuarios autenticados
+// pueden subir, ver o borrar documentos.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
