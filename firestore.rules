@@ -1,0 +1,13 @@
+rules_version = '2';
+
+// Reglas de ejemplo para el PROTOTIPO.
+// Requieren que el usuario haya iniciado sesión (Firebase Auth) para leer/escribir.
+// Antes de usar en producción con datos reales, ajusta esto a las necesidades
+// de tu equipo (por ejemplo, restringir por UID o por rol de usuario).
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
