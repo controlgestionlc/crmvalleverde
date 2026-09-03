@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Building2 } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import { Button, Field, inputClass } from "../components/ui";
+import logo from "../assets/logo.png";
 
 const ERROR_MESSAGES = {
   "auth/invalid-credential": "Correo o contraseña incorrectos.",
@@ -56,9 +56,8 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-paper px-4">
       <div className="w-full max-w-sm">
-        <div className="flex items-center gap-2 justify-center mb-8">
-          <Building2 className="w-6 h-6 text-clay" strokeWidth={1.75} />
-          <span className="font-display text-2xl tracking-tight">Casa Base</span>
+        <div className="flex justify-center mb-8">
+          <img src={logo} alt="Valle Verde Inmobiliaria" className="h-14 w-auto" />
         </div>
 
         <div className="bg-white border border-line rounded-lg p-6">
@@ -66,7 +65,7 @@ export default function Login() {
             {mode === "login" ? "Inicia sesión" : "Crea tu cuenta"}
           </h1>
           <p className="text-sm text-ink/50 mb-6">
-            {mode === "login" ? "Accede al CRM de tu inmobiliaria." : "Regístrate para empezar a usar el CRM."}
+            {mode === "login" ? "Accede al CRM de Inmobiliaria Valle Verde." : "Regístrate para empezar a usar el CRM."}
           </p>
 
           <form onSubmit={handleSubmit}>

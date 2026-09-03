@@ -1,6 +1,6 @@
-# Casa Base — CRM prototipo para inmobiliaria
+# Inmobiliaria Valle Verde — CRM
 
-Prototipo funcional de CRM para agencias inmobiliarias. Incluye:
+CRM para Inmobiliaria Valle Verde. Incluye:
 
 - **Contactos** — prospectos, clientes y propietarios
 - **Propiedades** — inventario de inmuebles en venta y renta
